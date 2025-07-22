@@ -58,7 +58,7 @@ export class ApiService {
   }
 
   public getAllTriggers(id: any) {
-    return this.httpClient.get(`${ConfigVariables.API_URL}/triggers?channel_id=${id}&itemsPerPage=1000&pageNumber=0&token_id=${ConfigVariables.Token}`)
+    return this.httpClient.get(`${ConfigVariables.API_URL}/triggers?channel_id=${id}&itemsPerPage=all&pageNumber=0&token_id=${ConfigVariables.Token}`)
       .pipe(map(result => {
         return result;
       }), catchError(

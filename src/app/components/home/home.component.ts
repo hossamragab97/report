@@ -43,7 +43,8 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private http: HttpClient,
-    private noteTracker: NoteTrackerService, private apiService: ApiService, private datePipe: DatePipe, private spinner: NgxSpinnerService
+     private noteTracker: NoteTrackerService,
+     private apiService: ApiService, private datePipe: DatePipe, private spinner: NgxSpinnerService
   ) { }
 
   numberPage = 1
@@ -68,7 +69,6 @@ export class HomeComponent implements OnInit {
   noData = false
 
   ngOnInit(): void {
-
     this.logoImage.src = ConfigVariables.LogPdf
 
     // get all devices 
