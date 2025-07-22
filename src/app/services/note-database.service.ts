@@ -22,6 +22,7 @@ export class NoteTrackerService {
     interval(15 * 60 * 1000).subscribe(() => {
       this.fetchAndSave();
     });
+    
   }
 
   private fetchAndSave(): void {
